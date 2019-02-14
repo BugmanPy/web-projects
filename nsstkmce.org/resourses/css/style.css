@@ -205,14 +205,60 @@ header {
 /* ABOUT */
 /************************/
 
+.box1 {
+    padding-left: 30px;
+    height: 400px;
+    width: 45%;
+    /*margin-right: 75px;*/
+}
+
+.box2 {
+    height: 400px;
+    width: 40%;
+   /* margin-left: 75px;*/
+    position: relative;
+}
+
 .about1 {
-    height: 100px;
-    width: auto;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 10;
+    left: 30;
+}
+
+.about2 {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
 
 
+/************************/
+/* OUR PRIDES */
+/************************/
 
+.TeamPrides {
+    background-color: #e8e7e7;
+}
+
+.head {
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pridebox {
+    border: 1px solid #f7f3f3;
+    padding: 20px;
+    margin: auto;
+    background-color: #f7f3f3;
+}
 
 
 
