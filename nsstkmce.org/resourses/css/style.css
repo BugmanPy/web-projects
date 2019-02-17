@@ -1,6 +1,7 @@
 /**********************************/
 /* Always do this first */
 /* BASIC SETUP  */
+/* #ed1c24 */
 /**********************************/
 * {
     margin: 0;
@@ -83,7 +84,8 @@ section {
 /* buttons */
 /************************/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
@@ -95,19 +97,23 @@ section {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit] {
     background-color: #d61119;
 }
 
 .mainbtn1:link,
-.mainbtn1:visited {
+.mainbtn1:visited,
+input[type=submit] {
     background-color: #ed1c24;
     color: #fff;
     margin-right: 30px;
 }
 
 .mainbtn1:hover,
-.mainbtn1:active {
+.mainbtn1:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #d61119;
     border: 1px solid #d61119;
 }
@@ -131,6 +137,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.71)),url(img/social1.png);
     background-size: cover;       /* To adjust size of back. img. */
     background-position: center;  /* To center the back. img. */
+    background-attachment: fixed; /* To fix background img while scrolling */
     height: 100vh;
 }
 
@@ -243,24 +250,214 @@ header {
 /************************/
 
 .TeamPrides {
-    background-color: #e8e7e7;
+    background-color: #f4f4f4;
 }
 
 .head {
-    height: 200px;
-    width: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 250px;
+    width: 95%;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    padding: 10px 0;
+}
+
+.principal {
+    height: 300px;
+    width: 90%;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    padding: 10px 0;
 }
 
 .pridebox {
-    border: 1px solid #f7f3f3;
-    padding: 20px;
-    margin: auto;
-    background-color: #f7f3f3;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+.pridebox1 {
+    margin: 0 35%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.prideText {
+    padding: 10px 0;
 }
 
 
+/************************/
+/* ACTIVITIES */
+/************************/
+
+.activity {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ed1c24;
+   
+}
+
+#HiddenText {
+    display: none;
+}
+
+#HiddenTextDiv:hover #HiddenText {
+    display: block;
+}
+
+
+.activity img {
+    width: 100%;
+    height: 200px;
+   /* opacity: 0.7;*/
+   transition: transform 0.5s, opacity 0.5s;
+}
+
+.activity img:hover {
+    opacity: 0.7;
+    transform: scale(1.15);
+}
+
+.actbtn {
+    margin-left: 45%;
+}
+
+.acttext {
+    text-align: center;
+    padding: 10% 0;
+    font-weight: 400;
+}
+
+/************************/
+/* ACTIVITIES */
+/************************/
+.contactsection {
+   /* border-top: 2px solid rgba(126, 126, 126, 0.22);*/
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;*/
+    background-color: #f4f4f4;
+    color: #000;
+    font-weight: 400;
+}
+
+.contactform {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    color: #000;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+/*
+input[type=submit]:link,
+input[type=submit]:visited {
+    background-color: #ed1c24;
+    color: #fff;
+    /*margin-right: 30px;*//*
+     display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 30px;
+    border: 1px solid #ed1c24;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #d61119;
+    border: 1px solid #d61119;
+}
+
+*/
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link, 
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0px;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:active,
+.footer-nav li a:hover {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.icon {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.icon:hover {
+    color: #3b5998;
+}
+
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 
