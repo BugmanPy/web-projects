@@ -1,0 +1,162 @@
+/**********************************/
+/* Always do this first */
+/* BASIC SETUP  */
+/* #ed1c24 */
+/**********************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic setup to get started */
+html {
+    background-color: #fff;  /* white */
+    color: #555; /* text colour */
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;  /* Global font size */
+    font-weight: 300;
+    text-rendering: optimizeLegibility; /* rendering fonts in browser */
+}
+
+/* Scince the contents are in rows due to grid.css */
+.row {
+    max-width: 1140px; /* only absolute pixel value */
+    margin: 0 auto;
+}
+
+/********** End of Basic codes ********/
+
+
+/************************/
+/* REUSABLE CONTENT     */
+/************************/
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    letter-spacing: 1PX;
+    word-spacing: 4PX;
+}
+
+h2 {
+    margin: 0;
+    font-size: 180%;
+    font-weight: 300;
+    letter-spacing: 1PX;
+    word-spacing: 4PX;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #ed1c24;
+    margin: 0 auto;
+    margin-top: 20px;
+    content: " ";
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/************************/
+/* HEADER  */
+/************************/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../../resourses/img/TKM%20College.png);
+    height: 250px;
+    background-size: cover;      
+    background-position: center;  
+    background-attachment: fixed; 
+}
+
+.textBox {
+    
+    height: 105px;
+    position: absolute;
+    top: 8%;
+    left: 30%;
+}
+
+.logoBox {
+    position: absolute;
+    top: 9%;
+    left: 10%;
+}
+.nssLogo {
+    height: 100px;
+    width: auto;
+}
+
+/************************/
+/* NAVIGATION */
+/************************/
+
+nav {
+    background-image: linear-gradient(#ed1c24,#ed1c24);
+    height: 40px;
+}
+
+
+.mainnav {
+    /*float: inherit;*/
+    list-style: none;
+   /* margin-top: 55px;*/
+    margin-left: 200px;
+}
+
+.mainnav li {
+    display: inline-block;
+    /*float: right;*/
+    margin-top: 6px;
+    margin-left: 40px;
+    font-weight: 400;
+    
+}
+
+.mainnav li a:link,
+.mainnav li a:visited {
+    padding: 2px 2px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+     border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+/* hover effect */
+.mainnav li a:hover,
+.mainnav li a:active {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -74,10 +74,11 @@ section {
 
 
 /**** PARAGRAPHS ****/
-.abouttext {
+.abouttext,p {
     line-height: 145%;
     width: 75%;
     margin-left: 10%;
+    font-weight: 400;
 }
 
 /************************/
@@ -273,6 +274,7 @@ header {
     background-color: #fff;
     border-radius: 5px;
     text-align: center;
+    height: 400px;
    
 }
 
@@ -280,6 +282,7 @@ header {
     margin: 0 35%;
     background-color: #fff;
     border-radius: 5px;
+    height: 450px;
 }
 
 .prideText {
@@ -291,36 +294,54 @@ header {
 /* ACTIVITIES */
 /************************/
 
-.activity {
-    margin: 0;
-    padding: 0;
+.hidden {
     width: 100%;
-    overflow: hidden;
+    height: 250px;
+    position: relative;
     background-color: #ed1c24;
-   
 }
 
-#HiddenText {
-    display: none;
-}
-
-#HiddenTextDiv:hover #HiddenText {
-    display: block;
-}
-
-
-.activity img {
+.hidden a img,
+actimg {
     width: 100%;
-    height: 200px;
-   /* opacity: 0.7;*/
-   transition: transform 0.5s, opacity 0.5s;
+    height: 100%;
+    transition: 0.5s;
 }
 
-.activity img:hover {
-    opacity: 0.7;
-    transform: scale(1.15);
+.hidden:hover a img {
+   /*filter: blur(2px);*/
+    opacity: 0.5;
 }
 
+.hidden:hover p {
+    opacity: 1;
+}
+
+/*** P ELEMENTS *****/
+.sahaya,
+.punarjani {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 10;
+    font-weight: 400;
+}
+
+.stateCamp {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    top: 30%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 10;
+    font-weight: 400;
+}
+
+/**** BUTTONS ****/
 .actbtn {
     margin-left: 45%;
 }
@@ -332,7 +353,7 @@ header {
 }
 
 /************************/
-/* ACTIVITIES */
+/* CONTACT FORM */
 /************************/
 .contactsection {
    /* border-top: 2px solid rgba(126, 126, 126, 0.22);*/
