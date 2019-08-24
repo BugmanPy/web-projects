@@ -1,0 +1,24 @@
+/* big tab to 1200px: from 1024 to 1200 px  */
+@media only screen and(max-width: 1200px){
+    .MainTextBox {
+        width: 100%;
+        padding: 0 2px;
+    }
+}
+
+
+/* Small tab to big tabs: from 768 to 1023 px  */
+@media only screen and(max-width: 1023px){
+    
+}
+
+
+/* Small phones to tabs: from 481 to 767 px  */
+@media only screen and(max-width: 767px){
+    
+}
+
+/* Small phones: from 0 to 480 px  */
+@media only screen and(max-width: 480px){
+    
+}

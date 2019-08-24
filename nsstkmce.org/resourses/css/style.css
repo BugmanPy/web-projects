@@ -135,7 +135,7 @@ input[type=submit]:active {
 /* HEADER */
 /************************/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.71)),url(img/social1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.71)),url(img/Banner.jpg);
     background-size: cover;       /* To adjust size of back. img. */
     background-position: center;  /* To center the back. img. */
     background-attachment: fixed; /* To fix background img while scrolling */
@@ -233,65 +233,128 @@ header {
     position: absolute;
     top: 10;
     left: 30;
+    box-shadow: -10px -10px 20px -2px;
+    border: 1px solid #fff;
 }
 
 .about2 {
+    box-shadow: 0 0 20px;
     height: 300px;
     width: 300px;
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 10;
+    border: 1px solid #fff;
 }
 
 
 
 /************************/
-/* OUR PRIDES */
+/* TEAM PRIDES 1 */
 /************************/
-
-.TeamPrides {
+.TeamPride1{
     background-color: #f4f4f4;
 }
 
-.head {
-    height: 250px;
-    width: 95%;
-    /*margin-left: 10px;
-    margin-right: 10px;*/
-    padding: 10px 0;
-}
-
-.principal {
-    height: 300px;
-    width: 90%;
-    /*margin-left: 10px;
-    margin-right: 10px;*/
-    padding: 10px 0;
-}
-
-.pridebox {
-    background-color: #fff;
-    border-radius: 5px;
+.princTextbox{
     text-align: center;
-    height: 400px;
-   
+    width: 45%;
+    height: 50%;
+    padding-top: 100px;
+    float: right;   
 }
 
-/*.pridebox:hover {
-    
-}*/
+.princTextbox p{
+    padding: 30px;
+}
 
-.pridebox1 {
-    margin: 0 35%;
+.princText{
     background-color: #fff;
-    border-radius: 5px;
-    height: 450px;
+    box-shadow: 0 0 20px;
 }
 
-.prideText {
-    padding: 10px 0;
+.princImgbox{
+    float: left;
+    box-shadow: 0 0 25px;
 }
+
+.princImgbox img{
+    width: 100%;
+    height: 50%;
+    border: 1px solid #000;
+    
+}
+
+/************************/
+/* TEAM PRIDES 2 */
+/************************/
+.u174a{
+    width: 40%;
+   float: left;
+}
+
+.u174a img {
+    width: 100%;
+    height: 50%;
+}
+
+.u174b img {
+    width: 100%;
+    height: 50%;
+}
+
+.u174b{
+     width: 40%;    
+    float: right; 
+}
+
+.u174a p, .u174b p{
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+/************************/
+/* TEAM PRIDES 3 */
+/************************/
+.TeamPride3{
+    background-color: #f4f4f4;
+}
+
+
+.u262a{
+    width: 40%;
+   float: left;
+}
+
+.u262a img {
+    width: 100%;
+    height: 50%;   
+}
+
+.u262b img {
+    width: 100%;
+    height: 50%;
+}
+
+.u262b{
+     width: 40%;    
+    float: right; 
+}
+
+.u262a p, .u262b p{
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+/*--- PO and APO img -- */
+.PO174, .APO174{
+    box-shadow: 0 0 20px;
+}
+
 
 
 /************************/

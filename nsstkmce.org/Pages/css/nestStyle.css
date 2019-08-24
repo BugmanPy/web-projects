@@ -67,120 +67,80 @@ section {
 
 
 /************************/
-/* HEADER  */
+/* MAIN NAV    */
 /************************/
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../../resourses/img/TKM%20College.png);
-    height: 250px;
-    background-size: cover;      
-    background-position: center;  
-    background-attachment: fixed; 
+.main-nav {
+    height: 70px;
+    background-color: #ed1c24;
 }
 
-.textBox {
-    
-    height: 105px;
-    position: absolute;
-    top: 8%;
-    left: 30%;
-}
-
-.logoBox {
-    position: absolute;
-    top: 9%;
-    left: 10%;
-}
-.nssLogo {
-    height: 100px;
+.nav-img {
+    height: 60px;
     width: auto;
+    padding-top: 10px;
+    padding-left: 30px;
+    float: left;
 }
 
-/************************/
-/* NAVIGATION */
-/************************/
-
-nav {
-    background-image: linear-gradient(#ed1c24,#ed1c24);
-    height: 40px;
-}
-
-
-.mainnav {
-    /*float: inherit;*/
+.main-nav ul {
     list-style: none;
-   /* margin-top: 55px;*/
-    margin-left: 200px;
+    padding-left: 200px;
+    
 }
 
-.mainnav li {
+.main-nav ul li {
     display: inline-block;
-    /*float: right;*/
-    margin-top: 6px;
-    margin-left: 40px;
-    font-weight: 400;
-    
-}
-
-.mainnav li a:link,
-.mainnav li a:visited {
-    padding: 2px 2px;
-    text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
-     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
-}
-
-/* hover effect */
-.mainnav li a:hover,
-.mainnav li a:active {
-    border-bottom: 2px solid #fff;
-}
-
-/************************/
-/* SIDE NAVIGATION */
-/************************/
-
-.NavTabs {
-    border: 1px solid #d6d3d3;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
-.NavTabs ul {
-    list-style: none;
-    margin:0 10%;
-    
-}
-
-.NavTabs ul li {
-    margin-top: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    text-align: center;
     font-weight: 400;
-    border-bottom: 1px solid #d6d3d3;
 }
 
-/************************/
-/* SIDE NAVIGATION */
-/************************/
 
-.Body {
+/************************/
+/* CONTENTS NAV    */
+/************************/
+.contents {
+    padding: 0;
+}
+
+.navBack {
+    height: 500px;
+    background-image: url(../../resourses/img/banner.png);
+    position: relative;
+        
+}
+
+.nav {
+    
+    margin: 3%;
+    margin-top: 20%;
     background-color: #f4f4f4;
+    position: absolute;
+    border-radius: 5px;
+    width: 94%;
+}
+
+.nav ul {
+    list-style: none;
+    padding-left: 10%;
+}
+
+.nav ul li {
+    padding: 5% 0;
+    font-weight: 400;
 }
 
 
+/************************/
+/* CONTENTS   */
+/************************/
 
-
-
-
-
-
-
-
-
-
-
-
+.headText {
+    padding-top: 30px;
+}
 
 
 
